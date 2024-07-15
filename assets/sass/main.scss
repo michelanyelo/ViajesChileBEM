@@ -1,16 +1,18 @@
 @charset 'UTF-8';
 // abstracts/
-// @import 'abstracts/variables';
+@import 'abstracts/variables';
 
 // vendors/
 @import 'vendors/bootstrap';
 
 // base/
+@import 'base/reset';
 
 // layout/
 
 // components/
-// @import 'components/carousel'
+@import 'components/navbar';
+@import 'components/carousel';
 
 // pages/
 

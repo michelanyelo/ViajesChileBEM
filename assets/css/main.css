@@ -11964,4 +11964,36 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0 6rem;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 0 8rem;
+}
+
+.navbar img {
+  width: 2rem;
+}
+
+@media (max-width: 600px) {
+  .carrusel-hero img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 601px) {
+  .carrusel-hero img {
+    max-height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 15%;
+       object-position: 0% 15%;
+  }
 }/*# sourceMappingURL=main.css.map */

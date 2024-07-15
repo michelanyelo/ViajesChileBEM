@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    .carrusel-hero img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 601px) {
+    .carrusel-hero img {
+        max-height: 500px;
+        object-fit: cover;
+        object-position: 0% 15%;
+    }
+}
