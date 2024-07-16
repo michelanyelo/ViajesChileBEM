@@ -12035,17 +12035,27 @@ p {
 }
 
 .navbar {
-  padding: 0 8rem;
-  height: 5rem;
+  position: fixed;
+  padding: 1rem 8rem;
+  transition: 0.3s ease-out;
 }
 
 .navbar img {
   width: 2rem;
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 600px) {
   .navbar {
-    padding: 0 4rem;
+    padding: 1rem;
+  }
+  .navbar .navbar-collapse {
+    transition: 0.3s ease-out;
+    background-color: #212529;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+    padding: 1rem 1rem;
+    color: #fff;
   }
 }
 @media (max-width: 600px) {

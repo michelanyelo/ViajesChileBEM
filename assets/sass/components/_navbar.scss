@@ -1,14 +1,31 @@
 .navbar {
-    padding: 0 8rem;
-    height: 5rem;
+    position: fixed;
+    padding: 1rem 8rem;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .navbar img {
     width: 2rem;
+    margin-left: 1rem;
 }
 
 @media screen and (max-width:600px) {
     .navbar {
-        padding: 0 4rem;
+        padding: 1rem;
+
+        .navbar-collapse {
+            -webkit-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+            background-color: $color-dark;
+            border-radius: 0.2rem;
+            margin-top: 0.5rem;
+            padding: 1rem 1rem;
+            color: $color-light;
+        }
     }
 }

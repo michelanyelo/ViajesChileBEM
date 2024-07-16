@@ -18,6 +18,9 @@ $fw-bold: 700;
 
 
 // Modificación de variables Bootstrap
+$navbar-dark-brand-color: $color-light;
+$navbar-dark-brand-hover-color: $color-light;
+$navbar-dark-active-color: $color-light;
 $card-title-color: $color-dark;
 $modal-backdrop-bg: $color-dark;
 $modal-content-bg: $color-dark;
@@ -26,10 +29,5 @@ $modal-backdrop-opacity: .7;
 $list-group-color: $color-light;
 $list-group-bg: $color-dark;
 $list-group-border-color: $color-dark;
-
-
-
-
-// Redefiniendo las variables de Bootstrap
 $primary: $color-primary;
 $secondary: $color-secondary;

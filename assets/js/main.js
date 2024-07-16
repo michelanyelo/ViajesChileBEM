@@ -1,7 +1,7 @@
 // Cambiar background del navbar en movimiento
 $(window).scroll(function () {
     let scroll = $(window).scrollTop();
-    if (scroll > 300) {
+    if (scroll > 100) {
         $(".navbar").css({
             "background-color": "#212529"
         }).removeClass("bg-transparent");
