@@ -5,10 +5,17 @@ $color-dark: #212529;
 $color-medium: #C2B292;
 $color-light: #fff;
 
+
 // Colores por función
 $header-color: $color-light;
-$card-title-color: $color-dark;
+
 
 // Pesos personalizados
 $fw-regular: 400;
 $fw-bold: 700;
+
+
+// Modificación de variables Bootstrap
+$card-title-color: $color-dark;
+// $modal-backdrop-bg: $color-dark;
+$modal-backdrop-opacity: .7;

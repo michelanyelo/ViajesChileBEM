@@ -82,6 +82,7 @@
         </div>
     </section>
 
+    <!-- Main Section -->
     <main id="MainSection" class="main-section">
         <!-- Quienes Somos -->
         <div id="QuienesSomos" class="container-fluid mt-5 g-0">
@@ -282,9 +283,67 @@
                 </div>
             </div>
             <hr class="border border-primary border-2 opacity-75">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <form class="text-white">
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Nombre <i class="fa-solid fa-circle-exclamation"
+                                    data-bs-toggle="tooltip" data-bs-title="Ejemplo: Miguel Ángel Monzón Martínez"></i>
+                            </label>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="textHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputCorreo" class="form-label">Email <i class="fa-solid fa-circle-exclamation"
+                                    data-bs-toggle="tooltip" data-bs-title="Ejemplo: correo@gmail.com"></i> </label>
+                            <input type="email" class="form-control" id="inputCorreo" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputMensaje" class="form-label">Mensaje <i
+                                    class="fa-solid fa-circle-exclamation" data-bs-toggle="tooltip"
+                                    data-bs-title="¡Comparte con nosotros tu mensaje!"></i></label>
+                            <textarea class="form-control" id="inputMensaje" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <!-- Button trigger modal -->
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#condicionesModal"
+                                class="text-white">Acepto los
+                                términos y condiciones</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 
+    <!-- Formulario Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="condicionesModal" tabindex="-1" aria-labelledby="condicionesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Términos y condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sit illum fugiat
+                        amet
+                        praesentium quos! Voluptates fugit necessitatibus unde perspiciatis, eveniet
+                        expedita
+                        ratione cupiditate voluptatum consequuntur asperiores praesentium earum quos.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Js Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
