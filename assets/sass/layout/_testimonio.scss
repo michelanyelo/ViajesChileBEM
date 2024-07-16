@@ -1,0 +1,24 @@
+.testimonios {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        justify-content: space-evenly;
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2.5rem;
+        max-width: 400px;
+        margin-bottom: 1rem;
+    }
+}

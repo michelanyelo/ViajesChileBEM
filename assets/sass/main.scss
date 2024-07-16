@@ -7,14 +7,16 @@
 
 // base/
 @import 'base/reset';
+@import 'base/typography';
 
 // layout/
-@import 'layout/testimonios';
+@import 'layout/testimonio';
 
 // components/
 @import 'components/navbar';
 @import 'components/carousel';
-@import 'components/card';
+@import 'components/destacados';
+@import 'components/testimonio';
 
 // pages/
 

@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -4337,7 +4338,7 @@ textarea.form-control-lg {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
-  --bs-card-title-color: ;
+  --bs-card-title-color: #212529;
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
@@ -11965,12 +11966,63 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+* {
+  padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+}
+
+body {
   padding: 0 6rem;
   height: 100vh;
+  background-color: #212529;
+}
+
+* {
+  font-family: "Open-Sans", sans-serif;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+}
+.testimonios__container {
+  justify-content: space-evenly;
+}
+.testimonios__card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+.testimonios__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  max-width: 400px;
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -11996,4 +12048,41 @@ body {
     -o-object-position: 0% 15%;
        object-position: 0% 15%;
   }
+}
+.destacados .card-text,
+.destacados .card-footer {
+  color: #212529;
+}
+
+.testimonios__card {
+  border-radius: 0.8rem;
+  transition: 0.6s ease-out;
+}
+.testimonios__card:hover {
+  background-color: #C2B292;
+  cursor: pointer;
+}
+.testimonios__card:hover .testimonios__text, .testimonios__card:hover .testimonios__name {
+  color: #212529;
+}
+.testimonios__text {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+.testimonios__img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonios__name {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.testimonios__text, .testimonios__name {
+  color: #C2B292;
+  transition: 0.6s ease-out;
 }/*# sourceMappingURL=main.css.map */

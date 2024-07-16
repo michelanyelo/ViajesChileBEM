@@ -1,0 +1,47 @@
+.testimonios {
+    &__card {
+        border-radius: 0.8rem;
+        -webkit-transition: 0.6s ease-out;
+        -moz-transition: 0.6s ease-out;
+        -o-transition: 0.6s ease-out;
+        transition: 0.6s ease-out;
+
+        &:hover {
+            background-color: $color-medium;
+            cursor: pointer;
+
+            & .testimonios__text,
+            & .testimonios__name {
+                color: $color-dark;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: $fw-bold;
+    }
+
+    &__text,
+    &__name {
+        color: $color-medium;
+        -webkit-transition: 0.6s ease-out;
+        -moz-transition: 0.6s ease-out;
+        -o-transition: 0.6s ease-out;
+        transition: 0.6s ease-out;
+    }
+}
