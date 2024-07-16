@@ -11979,6 +11979,10 @@ body {
   background-color: #212529;
 }
 
+main {
+  padding-bottom: 6rem;
+}
+
 * {
   font-family: "Open-Sans", sans-serif;
 }
@@ -12023,12 +12027,6 @@ p {
   padding: 1rem 2.5rem;
   max-width: 400px;
   margin-bottom: 1rem;
-}
-
-.modal-open main {
-  -ms-filter: blur(3px);
-  -o-filter: blur(3px);
-  filter: blur(3px);
 }
 
 .navbar {
@@ -12091,4 +12089,10 @@ p {
 .testimonios__text, .testimonios__name {
   color: #C2B292;
   transition: 0.6s ease-out;
+}
+
+.modal-open main {
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
 }/*# sourceMappingURL=main.css.map */
