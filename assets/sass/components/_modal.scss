@@ -4,3 +4,12 @@
     -o-filter: blur(3px);
     filter: blur(3px);
 }
+
+
+.condiciones-modal {
+
+    h5,
+    p {
+        color: $color-light;
+    }
+}

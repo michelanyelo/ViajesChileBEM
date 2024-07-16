@@ -1,7 +1,14 @@
 .navbar {
     padding: 0 8rem;
+    height: 5rem;
 }
 
 .navbar img {
     width: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        padding: 0 4rem;
+    }
 }

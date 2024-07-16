@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Open-Sans', sans-serif;
+    font-weight: $fw-regular;
 }
 
 h1,
@@ -12,10 +13,9 @@ h4,
 h5,
 h6 {
     color: $header-color;
-    font-weight: $fw-bold;
+    font-weight: $fw-regular;
 }
 
 p {
     color: $color-light;
-    font-weight: $fw-regular;
 }

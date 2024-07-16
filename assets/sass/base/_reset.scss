@@ -11,6 +11,12 @@ body {
     background-color: $color-dark;
 }
 
-main{
-    padding-bottom: 6rem;
+main {
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 0 2rem;
+    }
 }

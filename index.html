@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ángel Monzón Martínez">
+    <meta name="description" content="Página web de Viajes Chile con Bootstrap y SASS">
+    <meta name="keywords" content="viajes, chile, natulareza">
     <title>Viajes Chile 2</title>
     <!-- CSS  -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bee1354801.js" crossorigin="anonymous"></script>
 </head>
@@ -26,16 +32,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#QuienesSomos">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#Destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#Testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -50,24 +59,30 @@
             </div>
             <div class="carousel-inner rounded-3">
                 <div class="carousel-item active">
-                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Norte Altiplanico">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Primera imagen</h5>
-                        <p>Vista de nubes sobre el mar en una puesta de sol</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut placeat odit
+                            corrupti numquam vel nulla culpa deleniti velit laudantium quidem nemo necessitatibus
+                            facere, neque, fuga sunt cupiditate perspiciatis nesciunt!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Isla de Pascua">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Segunda imagen</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur voluptatibus facere
+                            pariatur reiciendis numquam, magni dolor consequatur, necessitatibus aspernatur ad illum
+                            voluptatum rerum. Nemo earum cumque molestias nam in hic.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguinos magallanicos">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Tercera imagen</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati velit beatae
+                            necessitatibus, ipsa sequi perspiciatis consequatur eligendi labore veniam voluptatibus
+                            pariatur ipsam iusto nam odit exercitationem magni. Consectetur, rem odit.</p>
                     </div>
                 </div>
             </div>
@@ -85,14 +100,14 @@
     <!-- Main Section -->
     <main id="MainSection" class="main-section">
         <!-- Quienes Somos -->
-        <div id="QuienesSomos" class="container-fluid mt-5 g-0">
+        <div id="QuienesSomos" class="container-fluid py-5 g-0">
             <div class="row">
                 <div class="col">
                     <h2 class="text-center fs-2">¿Quiénes Somos?</h2>
                 </div>
             </div>
-            <hr class="border border-primary border-2 opacity-75">
-            <div class="row d-flex align-items-center">
+            <hr class="border border-light border-2 opacity-75">
+            <div class="row d-flex align-items-center mt-4">
                 <div class="col-12 d-none col-lg-6 d-md-block text-md-center text-lg-start">
                     <img src="assets/img/quienes-somos.jpg" class="img-fluid rounded-4" alt="Somos Viajes Chile">
                 </div>
@@ -120,16 +135,16 @@
             </div>
         </div>
         <!-- Destacados -->
-        <div id="Destacados" class="destacados container-fluid mt-5 g-0">
+        <div id="Destacados" class="destacados container-fluid py-5 g-0">
             <div class="row">
                 <div class="col">
                     <h2 class="text-center fs-2">Destacados</h2>
                 </div>
             </div>
-            <hr class="border border-primary border-2 opacity-75">
+            <hr class="border border-light border-2 opacity-75">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="card mb-3">
+                    <div class="card mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="assets/img/card1.jpg" class="img-fluid rounded-start h-100 object-fit-cover"
@@ -137,7 +152,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Región de los lagos</h5>
+                                    <h5 class="card-title fw-bold">Región de los lagos</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                                         exercitationem asperiores perspiciatis pariatur numquam a voluptatum, fuga vel
                                         laboriosam ipsa enim quod similique facilis consequuntur neque velit placeat
@@ -153,7 +168,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="card mb-3">
+                    <div class="card mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="assets/img/card2.jpg" class="img-fluid rounded-start h-100 object-fit-cover"
@@ -161,7 +176,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Desierto de Atacama</h5>
+                                    <h5 class="card-title fw-bold">Desierto de Atacama</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Tempora suscipit neque molestiae officiis commodi voluptatibus quidem, maxime in
                                         qui eos sed, dolor quia incidunt, ea delectus provident! Facere, repudiandae
@@ -177,7 +192,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="card mb-3">
+                    <div class="card mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="assets/img/card3.jpg" class="img-fluid rounded-start h-100 object-fit-cover"
@@ -185,7 +200,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Norte grande de Chile</h5>
+                                    <h5 class="card-title fw-bold">Norte grande de Chile</h5>
                                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                         Quaerat, qui eligendi dolores animi ducimus rerum voluptatum. Dignissimos quasi
                                         ducimus exercitationem ea esse tempore architecto odit rerum natus saepe! Minus,
@@ -201,7 +216,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="card mb-3">
+                    <div class="card mb-4">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="assets/img/card4.jpg" class="img-fluid rounded-start h-100 object-fit-cover"
@@ -209,7 +224,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Bosque mágico</h5>
+                                    <h5 class="card-title fw-bold">Bosque mágico</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                                         pariatur consequuntur porro distinctio itaque esse dolor, possimus, a reiciendis
                                         magni illo soluta error corporis ipsa. Culpa itaque consequuntur necessitatibus
@@ -228,13 +243,13 @@
         </div>
 
         <!-- Testimonios -->
-        <div id="Testimonios" class="testimonios container-fluid mt-5 g-0">
+        <div id="Testimonios" class="testimonios container-fluid py-5 g-0">
             <div class="row">
                 <div class="col-12 ">
                     <h2 class="text-center fs-2">Testimonios</h2>
                 </div>
             </div>
-            <hr class="border border-primary border-2 opacity-75">
+            <hr class="border border-light border-2 opacity-75">
             <div class="row testimonios__container">
                 <div class="col-12 col-lg-4 testimonios__card-container">
                     <div class="testimonios__card">
@@ -256,7 +271,7 @@
                             doloremque commodi obcaecati reiciendis voluptatem.
                         </p>
                         <img class="testimonios__img img-fluid" src="assets/img/testimonio2.jpg"
-                            alt="Testimonio primera persona">
+                            alt="Testimonio segunda persona">
                         <h3 class="testimonios__name">Christian</h3>
                     </div>
                 </div>
@@ -268,7 +283,7 @@
                             doloremque commodi obcaecati reiciendis voluptatem.
                         </p>
                         <img class="testimonios__img img-fluid" src="assets/img/testimonio3.jpg"
-                            alt="Testimonio primera persona">
+                            alt="Testimonio tercera persona">
                         <h3 class="testimonios__name">Fernanda</h3>
                     </div>
                 </div>
@@ -276,15 +291,16 @@
         </div>
 
         <!-- Contacto -->
-        <div id="Contacto" class="contacto container-fluid mt-5 g-0">
+        <div id="Contacto" class="contacto container-fluid py-5 g-0">
             <div class="row">
                 <div class="col-12 ">
                     <h2 class="text-center fs-2">Contacto</h2>
                 </div>
             </div>
-            <hr class="border border-primary border-2 opacity-75">
-            <div class="row">
+            <hr class="border border-light border-2 opacity-75">
+            <div class="row row d-flex align-items-center">
                 <div class="col-12 col-lg-6">
+                    <div id="liveAlertPlaceholder"></div>
                     <form class="text-white">
                         <div class="mb-3">
                             <label for="inputName" class="form-label">Nombre <i class="fa-solid fa-circle-exclamation"
@@ -312,27 +328,28 @@
                                 class="text-white">Acepto los
                                 términos y condiciones</a>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
                     </form>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
                     <div class="listado-contacto">
-                        <div class="list-group">
-                            <a href="tel:+56999999999" class="list-group-item list-group-item-action">
-                                <i class="fa-solid fa-phone"></i> +56999999999
+                        <div class="list-group list-group-flush">
+                            <a href="tel:+56999999999" class="list-group-item list-group-item-action rounded-2 mb-2">
+                                <i class="fa-solid fa-phone me-4"></i> +56999999999
                             </a>
-                            <a href="mailto:contacto@viajeschile.com" class="list-group-item list-group-item-action">
-                                <i class="fa-solid fa-envelope"></i> contacto@viajeschile.com
+                            <a href="mailto:contacto@viajeschile.com"
+                                class="list-group-item list-group-item-action rounded-2 mb-2">
+                                <i class="fa-solid fa-envelope me-4"></i> contacto@viajeschile.com
                             </a>
                             <a href="https://www.linkedin.com/in/viajeschile"
-                                class="list-group-item list-group-item-action" target="_blank"
+                                class="list-group-item list-group-item-action rounded-2 mb-2" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fa-brands fa-linkedin"></i> ViajesChile
+                                <i class="fa-brands fa-linkedin me-4"></i> ViajesChile
                             </a>
-                            <a href="https://www.instagram.com/viajes_chile"
-                                class="list-group-item list-group-item-action" target="_blank"
+                            <a href="https://www.instagram.com/viajeschiledl"
+                                class="list-group-item list-group-item-action rounded-2 mb-2" target="_blank"
                                 rel="noopener noreferrer">
-                                <i class="fa-brands fa-instagram"></i> viajes_chile
+                                <i class="fa-brands fa-instagram me-4"></i> viajes_chile
                             </a>
                         </div>
 
@@ -344,13 +361,12 @@
 
     <!-- Formulario Modal -->
     <!-- Modal -->
-    <div class="modal fade" id="condicionesModal" tabindex="-1" aria-labelledby="condicionesModalLabel"
-        aria-hidden="true">
+    <div class="modal fade condiciones-modal" id="condicionesModal" tabindex="-1"
+        aria-labelledby="condicionesModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Términos y condiciones</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sit illum fugiat

@@ -4,7 +4,8 @@
 $color-dark: #212529;
 $color-medium: #C2B292;
 $color-light: #fff;
-
+$color-primary: #00C6B3;
+$color-secondary: #DBECE9;
 
 // Colores por función
 $header-color: $color-light;
@@ -13,9 +14,22 @@ $header-color: $color-light;
 // Pesos personalizados
 $fw-regular: 400;
 $fw-bold: 700;
+// $spacer: 1.2rem;
 
 
 // Modificación de variables Bootstrap
 $card-title-color: $color-dark;
-// $modal-backdrop-bg: $color-dark;
+$modal-backdrop-bg: $color-dark;
+$modal-content-bg: $color-dark;
+$modal-content-border-color: $color-light;
 $modal-backdrop-opacity: .7;
+$list-group-color: $color-light;
+$list-group-bg: $color-dark;
+$list-group-border-color: $color-dark;
+
+
+
+
+// Redefiniendo las variables de Bootstrap
+$primary: $color-primary;
+$secondary: $color-secondary;
