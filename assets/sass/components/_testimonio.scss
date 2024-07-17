@@ -1,9 +1,6 @@
 .testimonios {
     &__card {
         border-radius: 0.8rem;
-        -webkit-transition: 0.6s ease-out;
-        -moz-transition: 0.6s ease-out;
-        -o-transition: 0.6s ease-out;
         transition: 0.6s ease-out;
 
         &:hover {
@@ -12,6 +9,7 @@
 
             & .testimonios__text,
             & .testimonios__name {
+                transition: 0.6s ease-out;
                 color: $color-dark;
             }
         }
@@ -21,6 +19,7 @@
         font-size: 1rem;
         font-style: italic;
         text-align: center;
+        color: $color-medium;
     }
 
     &__img {
@@ -34,14 +33,6 @@
         margin-top: 0.5rem;
         font-size: 1.5rem;
         font-weight: $fw-bold;
-    }
-
-    &__text,
-    &__name {
         color: $color-medium;
-        -webkit-transition: 0.6s ease-out;
-        -moz-transition: 0.6s ease-out;
-        -o-transition: 0.6s ease-out;
-        transition: 0.6s ease-out;
     }
 }

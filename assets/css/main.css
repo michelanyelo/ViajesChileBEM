@@ -12088,12 +12088,14 @@ p {
   cursor: pointer;
 }
 .testimonios__card:hover .testimonios__text, .testimonios__card:hover .testimonios__name {
+  transition: 0.6s ease-out;
   color: #212529;
 }
 .testimonios__text {
   font-size: 1rem;
   font-style: italic;
   text-align: center;
+  color: #C2B292;
 }
 .testimonios__img {
   height: 150px;
@@ -12106,10 +12108,7 @@ p {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-}
-.testimonios__text, .testimonios__name {
   color: #C2B292;
-  transition: 0.6s ease-out;
 }
 
 .modal-open main {
